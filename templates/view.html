@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+This file is an edited part of https://github.com/hikariatama/ftg-mods-web repo
+Author of original: github.com/hikariatama (t.me/hikariatama)
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ sitename | safe }} - {{ mod_name | safe }}</title>
+	<link rel="icon" href="{{ mod_icon | safe }}" />
+	<meta name="title" content="{{ sitename | safe }} - {{ mod_name | safe }}">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ url | safe }}">
+	<meta property="og:title" content="{{ sitename | safe }} - {{ mod_name | safe }}">
+	<meta property="og:image" content="{{ mod_icon | safe }}">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="{{ url | safe }}">
+	<meta property="twitter:title" content="{{ sitename | safe }} - {{ mod_name | safe }}">
+	<meta property="twitter:image" content="{{ mod_icon | safe }}">
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-darcula.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <link rel="stylesheet" href="/static/view_styles.css">
+</head>
+
+
+<body class="line-numbers">
+	<pre><div class="title">{{ mod_name }}</div> <div class="title install">📥 Install</div><br><code class="language-python">{{ mod_code }}</code></pre>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-python.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+	<script type="text/javascript">
+		const hearts = ['❤️', '🧡', '💛', '💙', '💚', '💜', '🖤', '🤍'];
+		document.querySelector('.title').onclick = (e) => {
+			navigator.clipboard.writeText(document.querySelector('code').innerText);
+			e.currentTarget.innerHTML = hearts[Math.floor(Math.random() * hearts.length)] + ' Code copied';
+		}
+
+		document.querySelector('.install').onclick = (e) => {
+			navigator.clipboard.writeText(".dlm https://{{ url }}/{{ mod_name }}.py");
+			e.currentTarget.innerHTML = hearts[Math.floor(Math.random() * hearts.length)] + ' Link copied';
+		}
+	</script>
+</body>
+</html>
