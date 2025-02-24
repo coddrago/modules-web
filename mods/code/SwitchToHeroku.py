@@ -12,7 +12,7 @@
 # Author: @codrago
 # Commands: switchtoheroku
 # meta developer: @codrago_m
-# meta_desc: Switch your hikka to heroku
+# meta desc: Switch your hikka to heroku
 # meta banner: https://mods.codrago.top/banners/banner.png
 # meta pic: https://kappa.lol/2Z_Q-
 # ---------------------------------------------------------------------------------
