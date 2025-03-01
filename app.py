@@ -98,6 +98,14 @@ async def get_banner(request: Request, mod: str):
         status_code=200
     )
 
+@app.get("/ids/{id}.txt")
+async def get_id(request: Request, id: str):
+    file = f"mods/ids/{id}.txt"
+    return StreamingResponse(
+        content=io.BytesIO(open(file, "rb").read()),
+        status_code=200
+    )
+
 
 @app.get("/basic_icon.png")
 async def get_icon(request: Request):
