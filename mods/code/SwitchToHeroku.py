@@ -12,7 +12,7 @@
 # Author: @codrago
 # Commands: switchtoheroku
 # meta developer: @codrago_m
-# meta desc: Switch your hikka to heroku
+# meta_desc: Switch your hikka to heroku
 # meta banner: https://mods.codrago.top/banners/banner.png
 # meta pic: https://kappa.lol/2Z_Q-
 # ---------------------------------------------------------------------------------
@@ -62,6 +62,22 @@ class SwitchToHeroku(loader.Module):
 
         await asyncio.create_subprocess_shell(
             "git remote set-url origin https://github.com/coddrago/Heroku.git",
+            stdin=asyncio.subprocess.PIPE,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+            cwd=utils.get_base_dir(),
+        )
+
+        await asyncio.create_subprocess_shell(
+            "git config --global user.email 'you@example.com'",
+            stdin=asyncio.subprocess.PIPE,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+            cwd=utils.get_base_dir(),
+        )
+
+        await asyncio.create_subprocess_shell(
+            "git config --global user.name 'Your Name'",
             stdin=asyncio.subprocess.PIPE,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
