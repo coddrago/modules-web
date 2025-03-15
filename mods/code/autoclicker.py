@@ -21,14 +21,14 @@ import asyncio
 
 @loader.tds
 class AutoClickerMod(loader.Module):
-    """Модуль для автоматического нажатия на инлайн кнопки."""
+    """Autoclicker for inline buttons."""
 
     strings = {
         "name": "AutoClicker",
         "clicker_on": "<b>AutoClicker on!</b>",
         "no_args": "<b>Where arguments and reply?</b>",
         "clicker_off": "<b>AutoClicker off!</b>",
-        "no_button": "<b>There are no inline buttons in the message.</b>,
+        "no_button": "<b>There are no inline buttons in the message.</b>",
     }
 
 
