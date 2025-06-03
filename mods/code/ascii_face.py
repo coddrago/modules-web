@@ -13,8 +13,8 @@
 # Commands: ascii
 # scope: hikka_only
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/ascii_face.png
-# meta pic: https://0x0.st/s/TGT42nesnQ5TwvixG8nFEQ/8KPa.webp
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/HoE.webp
 # ---------------------------------------------------------------------------------
 
 __version__ = (1, 0, 0)
@@ -24,6 +24,7 @@ from .. import loader, utils
 @loader.tds
 class Ascii_face(loader.Module):
     """Random Ascii Face from utils"""
+
     strings = {
     "name": "Ascii_Face",
     "ascii_face": "<emoji document_id=5343719226450385808>😛</emoji> <b>Your random AsciiFace:</b> ",

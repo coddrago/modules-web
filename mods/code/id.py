@@ -13,8 +13,8 @@
 # Commands: id, chatid, userid
 # scope: hikka_only
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/id.png
-# meta pic: https://kappa.lol/p3wVI
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/HJX.webp
 # ---------------------------------------------------------------------------------
 
 __version__ = (1, 0, 0)
@@ -49,7 +49,7 @@ class ID(loader.Module):
 
     
     async def useridcmd(self, message):
-        """[reply] | Get User ID"""
+        """[reply or username] | Get User ID"""
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
 

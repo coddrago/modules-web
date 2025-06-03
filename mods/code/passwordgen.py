@@ -12,8 +12,8 @@
 # Author: @codrago
 # Commands: pass, passg
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/passwordgen.png
-# meta pic: https://envs.sh/Lmn.webp
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/Hoe.webp
 # ---------------------------------------------------------------------------------
 
 from .. import loader, utils
@@ -59,3 +59,4 @@ class PassGen(loader.Module):
       await utils.answer(message, self.strings["no_args"])
     else:
       await utils.answer(message, f"{self.strings['pass']}, <code>{password}</code>")
+    

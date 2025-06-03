@@ -13,8 +13,8 @@
 # Commands: id, chatid, userid
 # scope: hikka_only
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/randomizer.png
-# meta pic: https://0x0.st/s/de32M5VljJzzSJxSUjrqtA/8KPR.webp
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/HJy.webp
 # ---------------------------------------------------------------------------------
 
 __version__ = (1, 0, 0)

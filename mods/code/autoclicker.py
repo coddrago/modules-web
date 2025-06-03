@@ -10,9 +10,9 @@
 # 🔒    Licensed under the GNU AGPLv3
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 
-# meta developer: @codrago_m,@unneyon_hmods
-# meta banner: https://mods.codrago.top/banners/clicon.png
-# meta pic: https://0x0.st/s/7EWHGzqAj49M6PDMeawuzw/8KPu.webp
+# meta developer: @codrago_m, @unneyon_hmods
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/HJv.webp
 # ---------------------------------------------------------------------------------
 
 from telethon import events

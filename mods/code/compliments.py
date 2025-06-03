@@ -13,8 +13,8 @@
 # Commands: cg
 # scope: hikka_only
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/compliments.png
-# meta pic: https://kappa.lol/bbqyv
+# meta banner: https://raw.githubusercontent.com/coddrago/modules/refs/heads/master/banner.png
+# meta pic: https://envs.sh/HJ6.webp
 # ---------------------------------------------------------------------------------
 
 __version__ = (1, 0, 0)
@@ -25,6 +25,7 @@ import asyncio
 @loader.tds
 class Compliments(loader.Module):
     """Compliments for your partner"""
+
     strings = {
     "name": "Compliments",
     "speed_cfg": "Delay between edits"
