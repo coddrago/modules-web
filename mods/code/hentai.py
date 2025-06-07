@@ -13,7 +13,7 @@
 # Commands: fem, sfw, furry, nsfw, loli
 # scope: hikka_only
 # meta developer: @codrago_m
-# meta banner: https://mods.codrago.top/banners/loli.png
+# meta banner: https://mods.codrago.life/banners/loli.png
 # meta pic: https://envs.sh/HJ-.webp
 # ---------------------------------------------------------------------------------
 
